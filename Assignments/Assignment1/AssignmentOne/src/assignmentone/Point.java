@@ -23,18 +23,30 @@ public class Point implements Comparable<Point> {
     /**
      * Compares two points. 
      * 
-     * @param o Other point being compared.
-     * @return -1, 1, 0.
+     * @param p Other point being compared.
+     * @return 0 if equals, -1 if Point one is less than Point two, 1 if Point 
+     * one is greater Point 2.
      */
     @Override
-    public int compareTo(Point o) {
-        if (this.x < o.x) {
+    public int compareTo(Point p) {
+        if (this.x < p.x) {
             return -1;
-        } else if (this.x > o.x) {
+        } else if (this.x > p.x) {
             return 1;
         } else {
-            return 0;
+            if (this.y < p.y) {
+                return -1;
+            } else if (this.y > p.y) {
+                return 1;
+            } else {
+                return 0;
+            }
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Point{" + "x=" + x + ", y=" + y + '}';
     }
     
     public int getX() {
