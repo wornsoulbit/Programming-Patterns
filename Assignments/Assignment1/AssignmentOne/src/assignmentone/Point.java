@@ -6,6 +6,7 @@ package assignmentone;
  * @author Alex Vasil
  */
 public class Point implements Comparable<Point> {
+    
     private int x;
     private int y;
 
@@ -44,15 +45,30 @@ public class Point implements Comparable<Point> {
         }
     }
 
+    /**
+     * Formatted string for points x and y.
+     * 
+     * @return A formatted string.
+     */
     @Override
     public String toString() {
         return "Point{" + "x=" + x + ", y=" + y + '}';
     }
     
+    /**
+     * Getter for point x.
+     * 
+     * @return Point x.
+     */
     public int getX() {
         return x;
     }
 
+    /**
+     * Getter for point y.
+     * 
+     * @return Point y.
+     */
     public int getY() {
         return y;
     }

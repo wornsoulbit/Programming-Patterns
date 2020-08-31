@@ -5,7 +5,8 @@ import java.util.Arrays;
 import java.util.Collections;
 
 /**
- *
+ * Driver Class for assignment one.
+ * 
  * @author Alex Vasil
  */
 public class Driver {
