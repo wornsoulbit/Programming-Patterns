@@ -5,7 +5,7 @@ package assignmentone;
  * 
  * @author Alex Vasil
  */
-public class FixedProperty {
+public abstract class FixedProperty {
 
     protected String location;
     protected boolean inCity;

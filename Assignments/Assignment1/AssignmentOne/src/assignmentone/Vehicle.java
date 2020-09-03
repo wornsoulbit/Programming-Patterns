@@ -5,7 +5,7 @@ package assignmentone;
  * 
  * @author Alex Vasil
  */
-public class Vehicle {
+public abstract class Vehicle {
 
     protected int registrationNum;
     protected double maxVelocity;
