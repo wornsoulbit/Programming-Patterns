@@ -14,7 +14,11 @@ public class Suite extends HotelRoom {
      */
     public Suite(int roomNum) {
         super(roomNum);
-        super.rentRate = super.getRentRate() + 40;
+        rentRate += 40;
     }
-    
+
+    @Override
+    public String toString() {
+        return "Suite{" + '}' + super.toString();
+    }
 }

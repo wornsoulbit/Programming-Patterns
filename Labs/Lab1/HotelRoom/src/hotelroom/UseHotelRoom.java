@@ -13,9 +13,9 @@ public class UseHotelRoom {
 
         System.out.println("Inital Room/Rent rate test");
         HotelRoom room = new HotelRoom(32);
-        System.out.println(room.toString());
+        System.out.println(room);
         Suite nSuite = new Suite(0);
-        System.out.println(nSuite.toString());
+        System.out.println(nSuite);
 
         System.out.println("");
         System.out.println("Printing an array of HotelRooms");
@@ -29,7 +29,7 @@ public class UseHotelRoom {
         rooms[4] = new Suite(300);
 
         for (Object roomNum : rooms) {
-            System.out.println(roomNum.toString());
+            System.out.println(roomNum);
         }
 
         System.out.println("");
@@ -43,7 +43,7 @@ public class UseHotelRoom {
 
         //Prints out the ArrayList using Lamda expression.
         rooms2.forEach((roomNum) -> {
-            System.out.println(roomNum.toString());
+            System.out.println(roomNum);
         });
     }
 }
