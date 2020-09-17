@@ -1,5 +1,7 @@
 package book;
 
+import java.util.stream.IntStream;
+
 /**
  * Driver class for Lab2.
  *

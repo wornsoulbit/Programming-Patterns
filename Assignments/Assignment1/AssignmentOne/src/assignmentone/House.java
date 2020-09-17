@@ -31,4 +31,5 @@ public class House extends FixedProperty {
     public double getArea() {
         return area;
     }
+
 }

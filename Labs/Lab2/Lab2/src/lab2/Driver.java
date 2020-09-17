@@ -41,9 +41,7 @@ public class Driver {
         //Question 5.
         int number = 1234;
         
-        int[] digits = Integer.toString(number).chars().map(e -> e - '0').toArray();
-        
-        System.out.println(IntStream.of(digits).sum());
+        System.out.println(IntStream.of(Integer.toString(number).chars().map(e -> e - '0').toArray()).sum());
     }
 
 }
