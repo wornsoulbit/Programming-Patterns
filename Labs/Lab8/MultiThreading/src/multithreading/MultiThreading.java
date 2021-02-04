@@ -85,10 +85,6 @@ public class MultiThreading implements Runnable {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        ThreadTest t1= new ThreadTest();
-    ThreadDemo t2 = new ThreadDemo();
-     t1.start();
-     t2.start();
 //        //Part A: --------------------------------------------------------------
 //        
 //        System.out.println("Part A: \n");
@@ -179,16 +175,3 @@ public class MultiThreading implements Runnable {
 //        System.out.println("\nTotal elapsed: " + (elaspedTime2/1000.0) + " seconds.\n");
     }
 }
-class ThreadTest extends Thread{
-         public void run(){
-          for (int i=0; i<3; i++){
-                      System.out.println("A");
-                      System.out.println("B");
-         } }}
-class ThreadDemo extends Thread {
-          public void run(){
-          for (int i=0; i<3; i++){
-          System.out.println("C");
-          System.out.println("D");
-          } 
-       } }

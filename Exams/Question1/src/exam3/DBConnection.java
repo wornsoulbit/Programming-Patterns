@@ -1,4 +1,9 @@
-package finalproject2;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package exam3;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -30,7 +35,7 @@ public class DBConnection {
      * @return A new connection.
      */
     private static Connection createConnection() {
-        String dbUrl = "jdbc:sqlite:D:\\Computer Science Code&Homework\\Semester3\\Programming-Patterns\\Assignments\\FinalProject2\\bookStudent.db";
+        String dbUrl = "jdbc:sqlite:D:\\Computer Science Code&Homework\\SemesterThree\\Programming-Patterns\\Exams\\Exam3\\company.db";
         Connection c = null;
 
         try {
